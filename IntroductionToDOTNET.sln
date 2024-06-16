@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntroductionToDOTNET", "IntroductionToDOTNET\IntroductionToDOTNET.csproj", "{9815283F-6E37-4729-9937-32221459C5BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeworkGeometry", "HomeworkGeometry\HomeworkGeometry.csproj", "{6312B3A0-53F6-4DBC-9E25-3236D3B1FD42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9815283F-6E37-4729-9937-32221459C5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9815283F-6E37-4729-9937-32221459C5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9815283F-6E37-4729-9937-32221459C5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6312B3A0-53F6-4DBC-9E25-3236D3B1FD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6312B3A0-53F6-4DBC-9E25-3236D3B1FD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6312B3A0-53F6-4DBC-9E25-3236D3B1FD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6312B3A0-53F6-4DBC-9E25-3236D3B1FD42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
