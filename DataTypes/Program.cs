@@ -57,29 +57,6 @@ namespace DataTypes
 			Console.WriteLine($"Занимает {sizeof(decimal)} байта");
 			Console.WriteLine($"Диапазон принимаемых значений: {decimal.MinValue} - {decimal.MaxValue}");
 			Console.WriteLine(delimeter);
-
-			string line = Console.ReadLine(); // ввод числа в десятеричной системе 
-
-			int x = int.Parse(line);
-
-			string answer = "";
-			int remainder;
-			while (x != 0)
-			{
-				remainder = x % 16;
-				if (remainder == 10) { answer += "a";}	
-				else if (remainder == 11) { answer += "b"; }
-				else if (remainder == 12) {  answer += "c"; }
-				else if (remainder == 13) {  answer += "d"; }
-				else if (remainder == 14) {  answer += "e"; }
-				else if(remainder == 15) {  answer += "f"; }
-				else { answer += remainder.ToString(); }
-				x = x / 16;
-			}
-			//answer.Reverse();
-			//Запишите тут Ваш код
-
-			Console.WriteLine(answer);
 		}
 	}
 }
