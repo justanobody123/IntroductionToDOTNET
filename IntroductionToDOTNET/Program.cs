@@ -1,4 +1,5 @@
-﻿#define CLASS_CONSOLE
+﻿//#define CLASS_CONSOLE
+//#define STRINGS
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,22 +26,24 @@ namespace IntroductionToDOTNET
 			Console.WriteLine("Привет, .NET");
 			Console.ResetColor();
 #endif
+#if STRINGS
 			Console.Write("Введите ваше имя: ");
 			string first_name = Console.ReadLine();
 			Console.Write("Введите вашу фамилию: ");
 			string last_name = Console.ReadLine();
 			Console.Write("Введите ваш возраст: ");
 			int age = Convert.ToInt32(Console.ReadLine());
-            #region ConsoleWriteRegion
-            //Console.Write(first_name + " ");
-            //Console.Write(last_name + " ");
-            //Console.Write(age);
-            //Console.WriteLine();//cout << endl; 
-            #endregion
-            //Console.WriteLine(first_name + " " + last_name + " " + age + "\n");//String Concatenation
-            //Console.WriteLine(string.Format("{0} {1} {2}", last_name, first_name, age)); //String Formatting
-            Console.WriteLine($"{last_name} {first_name} {age}"); //Strings Interpolation
+			#region ConsoleWriteRegion
+			//Console.Write(first_name + " ");
+			//Console.Write(last_name + " ");
+			//Console.Write(age);
+			//Console.WriteLine();//cout << endl; 
+			#endregion
+			//Console.WriteLine(first_name + " " + last_name + " " + age + "\n");//String Concatenation
+			//Console.WriteLine(string.Format("{0} {1} {2}", last_name, first_name, age)); //String Formatting
+			Console.WriteLine($"{last_name} {first_name} {age}"); //Strings Interpolation  
+#endif
 
-        }
+		}
 	}
 }
