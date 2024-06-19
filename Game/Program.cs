@@ -10,10 +10,10 @@ namespace Game
 	{
 		class Square
 		{
-			private int size;
-			private ConsoleColor color;
-			private int x;
-			private int y;
+			int size;
+			ConsoleColor color;
+			int x;
+			int y;
 			private int checkSize(int value)
 			{
 				if (value <= 0) { value = 1; }
