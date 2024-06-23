@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursion", "Recursion\Recu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class Recursion", "Class Recursion\Class Recursion.csproj", "{3B2289AC-3D65-435A-B7DD-993D32C77684}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{F31F4B0D-EA50-4BC4-B53B-261F1109FB3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{3B2289AC-3D65-435A-B7DD-993D32C77684}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B2289AC-3D65-435A-B7DD-993D32C77684}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B2289AC-3D65-435A-B7DD-993D32C77684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31F4B0D-EA50-4BC4-B53B-261F1109FB3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31F4B0D-EA50-4BC4-B53B-261F1109FB3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31F4B0D-EA50-4BC4-B53B-261F1109FB3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31F4B0D-EA50-4BC4-B53B-261F1109FB3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
