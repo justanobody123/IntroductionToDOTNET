@@ -13,8 +13,13 @@ namespace Factorial
 	{
 		static void Main(string[] args)
 		{
-			for (uint i = 0; i <= 100; i++) { Console.WriteLine($"{i}! = {Factorial(i)}"); }
-			//Console.WriteLine(Factorial1(8750));
+			//for (uint i = 0; i <= 100; i++) { Console.WriteLine($"{i}! = {Factorial(i)}"); }
+			//Console.WriteLine(Factorial1(10000));
+			DateTime	start = DateTime.Now;
+			Console.WriteLine(Factorial(10000));
+			DateTime	end = DateTime.Now;
+			TimeSpan duration = start - end;
+            Console.WriteLine($"Duration{duration.ToString("g")}");
         }
 
 		static string Factorial(uint number)

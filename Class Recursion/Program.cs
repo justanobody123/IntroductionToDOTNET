@@ -14,8 +14,16 @@ namespace Class_Recursion
             //int floor = Convert.ToInt32(Console.ReadLine());
             //Elevator(floor);
             Console.Write("Введите число: ");
-			ulong n = Convert.ToUInt64(Console.ReadLine());
-            Console.WriteLine($"{n}! = {Factorial(n)}");
+			long n = Convert.ToInt64(Console.ReadLine());
+			try
+			{
+				Console.WriteLine($"{n}! = {Factorial(n)}");
+			}
+			catch (Exception ex)
+			{
+
+                Console.WriteLine($"{ex.GetType()}: {ex.Message}");
+            }
         }
 		static void Elevator(int floor)
 		{
@@ -29,10 +37,10 @@ namespace Class_Recursion
             Elevator(floor - 1);
 			Console.WriteLine($"Вы на {floor} этаже.");
 		}
-		static double Factorial(double n)
+		static long Factorial(long n)
 		{
 			if (n <= 1) return 1;
-			double f = n * Factorial(n - 1);
+			long f = n * Factorial(n - 1);
 			Console.WriteLine($"{n}! = {f}");
 			return f;
 		}
