@@ -133,7 +133,6 @@ namespace Tic_Tac_Toe
 				{
 					x = random.Next(3);
 					y = random.Next(3);
-					Console.WriteLine($"{x}, {y}");
 					if (field[x, y] == 0)
 					{
 						field[x, y] = botChoice;
@@ -201,7 +200,7 @@ namespace Tic_Tac_Toe
 					Console.Clear();
 					int queue = 1;
 					bool gameover = false;
-					char winner;
+					string winner;
 					do
 					{
 						if (queue == playerChoice)
@@ -217,13 +216,14 @@ namespace Tic_Tac_Toe
 						//Меняем очередность хода
 						queue = queue == 1 ? 2 : 1;
 
-					} while (!gameover);
+					} while (!gameover && filledCell != 9);
 					PrintGrid();
-					CleanGame();
-					if (queue == 1) winner = nought;
-					else winner = cross;
+                    if (filledCell == 9 && !gameover) winner = "Никто не";
+					else if (queue == 1) winner = nought.ToString();
+					else winner = cross.ToString();
                     Console.WriteLine($"{winner} победил.\nДля продолжения нажмите любую клавишу...");
 					Console.ReadKey();
+					CleanGame();
 				} while (true);
 			}
 			bool IsGameOver()
