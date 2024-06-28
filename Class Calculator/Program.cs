@@ -90,6 +90,18 @@ namespace Class_Calculator
 						c_operations[c_operations.Length - 1] = '\0';
 					}
 				}
+				for (int i = 0; i < c_operations.Length; i++)
+				{
+					if (c_operations[i] == '+' || c_operations[i] == '-')
+					{
+						if (c_operations[i] == '+') d_numbers[i] += d_numbers[i + 1];
+						if (c_operations[i] == '-') d_numbers[i] -= d_numbers[i + 1];
+						for (int j = i + 1; j < d_numbers.Length - 1; j++) d_numbers[j] = d_numbers[j + 1];
+						for (int j = i; j < c_operations.Length - 1; j++) c_operations[j] = c_operations[j + 1];
+						d_numbers[d_numbers.Length - 1] = 0;
+						c_operations[c_operations.Length - 1] = '\0';
+					}
+				}
 				for (int i = 0; i < d_numbers.Length; i++)
 				{
 					Console.Write(d_numbers[i] + "\t");
