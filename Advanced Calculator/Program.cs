@@ -36,8 +36,8 @@ namespace Calc
 			} 
 #endif
 			bool correct = true;
-			do
-			{
+			//do
+			//{
 				//Flat expression DONE
 				correct = true;
 				//Console.Write("Введите арифметические выражение: ");
@@ -46,10 +46,12 @@ namespace Calc
 				//string expression = "22 + 33 + 44 + 55 - 5";
 				//string expression = "22 * 33 / 44 * 55 / 5";
 				expression = "(22 + 33 * (44 + 55)) / 5";
+				//expression = "(11 + (55+(22+33)/4-5)*2*3+3)*(3+2)";
 				Console.WriteLine(expression);
 				Console.WriteLine(Browse(expression));
+				Console.WriteLine(Calculate(expression));
 				//Console.WriteLine($"Result: {Calculate(Browse(expression))}");
-			} while (!correct);
+			//} while (!correct);
 
 			//Main(args);	//Рекурсивный вызов функции Main(), при завершении программы она заново звпускается.
 		}
