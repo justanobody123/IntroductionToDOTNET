@@ -26,7 +26,7 @@ namespace Tic_Tac_Toe
 			int filledCell = 0;
 			readonly int[][] winCombinations = new int[][]//Так, насколько я поняла, обзываются константы не для примитивных типов данных.
 			{
-							  //i, j
+						  //i, j
 				new int[] { 0, 0, 0, 1, 0, 2}, //th
 				new int[] { 1, 0, 1, 1, 1, 2}, //mh
 				new int[] { 2, 0, 2, 1, 2, 2}, //bh
@@ -234,7 +234,6 @@ namespace Tic_Tac_Toe
 						field[winCombinations[i][0], winCombinations[i][1]] == field[winCombinations[i][2], winCombinations[i][3]] &&
 						field[winCombinations[i][2], winCombinations[i][3]] == field[winCombinations[i][4], winCombinations[i][5]])
 					{
-
                         return true;
 					}
 				}

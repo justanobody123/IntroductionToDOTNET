@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced Calculator", "Adva
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tic-Tac-Toe", "Tic-Tac-Toe\Tic-Tac-Toe.csproj", "{0BD38A2D-9FCE-4D27-AD1A-A9F3FA7C36EE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arrays", "Arrays\Arrays.csproj", "{E3197B9A-E69B-4940-9474-F3337150E02D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{0BD38A2D-9FCE-4D27-AD1A-A9F3FA7C36EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BD38A2D-9FCE-4D27-AD1A-A9F3FA7C36EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BD38A2D-9FCE-4D27-AD1A-A9F3FA7C36EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3197B9A-E69B-4940-9474-F3337150E02D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3197B9A-E69B-4940-9474-F3337150E02D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3197B9A-E69B-4940-9474-F3337150E02D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3197B9A-E69B-4940-9474-F3337150E02D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
