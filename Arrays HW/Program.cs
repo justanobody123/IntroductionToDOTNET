@@ -26,7 +26,7 @@ namespace Arrays_HW
 			Console.WriteLine("SINGLE_DIMENSIONAL_ARRAYS:");
 			Console.WriteLine("\n----------задание №1----------");
             int size = 10, topLimit = 100;
-			int[] SDarr = new int[10];
+			int[] SDarr = new int[size];
             for (int i = 0; i < SDarr.Length; i++) 
 			{
 				SDarr[i] = rand.Next(topLimit);

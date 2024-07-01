@@ -19,7 +19,7 @@ namespace Tic_Tac_Toe
 			int[,] field = new int[fieldSize, fieldSize];// { { 1, 1, 1 }, { 1, 1, 1 }, { 1, 1, 1 } };
 			int cursorX = 0;
 			int cursorY = 0;
-			int gridX = 0;
+			int gridX = 10;
 			int gridY = 0;
 			int playerChoice;
 			int botChoice;
